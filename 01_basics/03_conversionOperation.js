@@ -1,10 +1,7 @@
-let score = "33"
-
-console.log(typeof score)
-
-let valueInNumber = Number(score)
-
-console.log(typeof valueInNumber)
+// let score = "33"
+// console.log(typeof score)
+// let valueInNumber = Number(score)
+// console.log(typeof valueInNumber)
 
 // when "33" is converted to number then output 33
 // when "33abc" (Or any string i.e. "Yug" and etc) is converted to number then output NaN (Not a number)
@@ -12,16 +9,40 @@ console.log(typeof valueInNumber)
 // when null is converted to number then output is 0
 // when undefined is converted to number then output is NaN again 
 
-let isLoggedIn = 1
-let booleanIsLoggedIn = Boolean(isLoggedIn)
-console.log(booleanIsLoggedIn);
+// let isLoggedIn = 1
+// let booleanIsLoggedIn = Boolean(isLoggedIn)
+// console.log(booleanIsLoggedIn);
 
 // when 1/0 is converted in boolean then output is true/false
 // when empty string is converted in boolean then output is false
 // when non empty string is converted in boolean then output is true
 
-let someNumber = 33
-let stringNumber = String(someNumber)
-console.log(stringNumber);
-console.log(typeof stringNumber);
+// let someNumber = 33
+// let stringNumber = String(someNumber)
+// console.log(stringNumber);
+// console.log(typeof stringNumber);
+
+// --------------------- Operations ------------------ 
+
+let value = 3
+let negValue = -value 
+console.log(negValue);
+
+
+// we are skipping simple operations like add and all
+console.log(2**3); // power of 2
+
+// string concatination 
+
+let str1 = "Hello"
+let str2 = " Yug"
+console.log(str1 + str2);
+
+// some confusing cases
+
+// these are all bad practices, becuase it is so confusing and not at all readable
+console.log("1" + 2);
+console.log(1 + "2");
+console.log("1" + 2 + 2);
+console.log(1 + 2 + "2");
 
