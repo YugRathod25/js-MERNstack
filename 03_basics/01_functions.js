@@ -43,3 +43,37 @@ function loginUserMsg(username){ // or to make it undefined proof we can directl
 console.log(loginUserMsg("Yug")); // here when we give no parameter not even empty string then it shows undefined
 // to avoid that we use if-else to check condition
 // applying basic conditional to implement the logic. More discussion will come ahead
+
+
+// now in e commerce scenario we dont know how many things user will add, and we have to give the sum to calculate total bill
+// so to do so we use rest operator (...), we have used this before as spread oprator (...) both are same but depends on usecase
+// now we will see a example of e commerce platform to add all items
+
+function calcCartPrice (...num1){
+    return num1
+}
+
+console.log(calcCartPrice(100, 200, 4000)); // we can give all the values as parameter and it will return an array of all the price
+// now we can use loop and add all the values of array and can easily tackle this problem
+
+// Now passing an object in function 
+
+const user = {
+    username: "Yug",
+    price: 2510
+}
+
+function handleObj(anyObj) {
+    console.log(`Username is ${anyObj.username} and the price is ${anyObj.price}`);
+}
+
+handleObj(user) // and also we can directly define obj in parameter 
+
+// Now passing an array in function 
+const myNewArrar = [200, 40, 3000, 5]
+
+function secValueOfArray(anyArray){
+    console.log(anyArray[1]);
+}
+
+secValueOfArray(myNewArrar) // simlarly we can directly pass the array, instead of declaring and defining it abouve 
