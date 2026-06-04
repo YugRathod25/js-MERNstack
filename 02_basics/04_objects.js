@@ -46,3 +46,18 @@ console.log(Object.entries(tinderUser));
 
 // we can also find if any particular obj has any particular property 
 console.log(tinderUser.hasOwnProperty('isLoggedIn')); // it will return boolean expression i.e. t/f
+
+// Destructuring of object
+
+const course = {
+    name: "js with me",
+    price: "000",
+    courseInstructor: "Yug"
+}
+
+// here is a syntax through which we can access any value
+
+const {courseInstructor} = course // now we can accesss this courseInstructor value anywhere with its name no need of giving obj name
+// we can also change its name in curly braces like {courseInstructor: instructor} so make it short for use
+console.log(courseInstructor);
+
