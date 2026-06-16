@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Yug Rathod</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName)
+    {
+        const li = document.createElement('li')
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("Python")
+    addLanguage("Typescript")
+    // more optimized way to write abovve function
+    function addOptiLanguage(langName){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage("GO")
+
+    // editing any value
+    const secondLang = document.querySelector("li:nth-child(2)")
+    secondLang.innerHTML = "C++"
+
+    // 2nd approach
+    const newLi = document.createElement('li')
+    newLi.textContent = "C"
+    secondLang.replaceWith(newLi)
+
+    // edit
+
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = '<li>React</li>'
+
+    // remove
+
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+</script>
+</html>
