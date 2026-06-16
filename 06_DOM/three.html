@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Yug Rathod</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+</body>
+<script>
+    // creating a div element
+    const div = document.createElement('div')
+    console.log(div);
+    // adding property into this div
+    div.className = "main"
+    div.id = "myId"
+    div.setAttribute("title", "generated title")
+    div.style.backgroundColor = "green"
+    div.style.padding = "12px"
+    // 2 ways to add text one is this
+    // div.innerText = "Yug bhai"
+    // the other is 
+    const addTxt = document.createTextNode("Yug bhai")
+    div.appendChild(addTxt)
+    // now this whole element is saved in memory, now we have to attach this in main file to implement it
+    document.body.appendChild(div)
+</script>
+</html>
