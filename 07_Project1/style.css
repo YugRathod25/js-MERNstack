@@ -1,0 +1,41 @@
+html{
+    margin: 0;
+}
+
+div{
+    display: block;
+}
+
+body{
+    background-color: #383737;
+}
+
+.canvas{
+    margin: 100px auto 100px;
+    width: 80%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.button{
+    height: 100px;
+    width: 100px;
+    border: solid black 2px;
+    display: inline-block;
+}
+
+#pastelPink{
+    background-color: #F9B2D7;
+}
+
+#pastelBlue{
+    background-color: #81A6C6;
+}
+
+#pastelYellow{
+    background-color: #A2CB8B;
+}
+
+#pastelPurple{
+    background-color: #AC87C5;
+}
