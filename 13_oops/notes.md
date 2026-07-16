@@ -5,4 +5,17 @@
 ## Object
 - collection of properties and methods
 
-## Why use OOP ?
+## Parts of OOP
+Object literal
+
+- Contructor function 
+- Prototypes
+- Classes
+- Instances (new, this)
+
+## 4 pillars
+
+Abstaction 
+Encapsulation 
+Inheritance
+Polymorphism
